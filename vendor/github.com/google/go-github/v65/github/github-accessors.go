@@ -22990,6 +22990,14 @@ func (t *Team) GetPrivacy() string {
 	return *t.Privacy
 }
 
+// GetNotificationSetting returns the NotificationSetting field if it's non-nil, zero value otherwise.
+func (t *Team) GetNotificationSetting() string {
+	if t == nil || t.NotificationSetting == nil {
+		return ""
+	}
+	return *t.NotificationSetting
+}
+
 // GetReposCount returns the ReposCount field if it's non-nil, zero value otherwise.
 func (t *Team) GetReposCount() int {
 	if t == nil || t.ReposCount == nil {
